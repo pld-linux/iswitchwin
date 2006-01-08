@@ -8,9 +8,10 @@ Group:		Applications
 Source0:	http://martinman.net/download/iswitchwin/%{name}-%{version}.tar.gz
 # Source0-md5:	6a72faa7dc24dea974d63141d78c103b
 URL:		http://martinman.net/software/iswitchwin.html
-BuildRequires:	dbus-glib-devel
-BuildRequires:	libglade2-devel
-BuildRequires:	libwnck-devel	
+BuildRequires:	dbus-glib-devel >= 0.35
+BuildRequires:	libglade2-devel >= 2.0
+BuildRequires:	libwnck-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
