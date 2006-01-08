@@ -1,9 +1,5 @@
-#
-# Conditional build:
-%bcond_with	tests		# build with tests
-%bcond_without	tests		# build without tests
-#
 Summary:	Fast Window Switcher for EWHM window managers
+Summary(pl):	Narzêdzie do szybkiego prze³±czania okien dla zarz±dców okien EWHM
 Name:		iswitchwin
 Version:	0.8
 Release:	1
@@ -26,6 +22,15 @@ control your window manager and has been primarily written for
 Metacity and Gnome environment. It should work with any EWHM
 compatibile window manager.
 
+%description -l pl
+switchwin pozwala ³atwo prze³±czaæ miêdzy oknami na obszarach
+roboczych poprzez wpisywanie (czê¶ci) tytu³u po¿±danego okienka.
+Narzêdzie zosta³o zainspirowane przez iswitch-window.jl oryginalnie
+napisane przez Topi Paavolê <tjp@iki.fi> dla zarz±dcy okien Sawfish.
+iswitchwin u¿ywa libwnck do sterowania zarz±dc± okien i zosta³o
+napisane g³ównie dla Metacity i ¶rodowiska GNOME. Powinno dzia³aæ z
+dowolnym zarz±dc± okien zgodnym z EWHM.
+
 %prep
 %setup -q
 
@@ -35,9 +40,6 @@ compatibile window manager.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
-#install -d $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -49,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog BUGS README TODO
 %attr(755,root,root) %{_bindir}/iswitchwin
-%{_datadir}/%{name}/glade/iswitchwinui.glade
+%{_datadir}/%{name}
