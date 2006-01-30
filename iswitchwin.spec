@@ -1,12 +1,12 @@
 Summary:	Fast Window Switcher for EWHM window managers
 Summary(pl):	Narzêdzie do szybkiego prze³±czania okien dla zarz±dców okien EWHM
 Name:		iswitchwin
-Version:	0.8
+Version:	0.9
 Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://martinman.net/download/iswitchwin/%{name}-%{version}.tar.gz
-# Source0-md5:	6a72faa7dc24dea974d63141d78c103b
+# Source0-md5:	940dec25d63dbd3cca8fc1718a5de227
 URL:		http://martinman.net/software/iswitchwin.html
 BuildRequires:	dbus-glib-devel >= 0.35
 BuildRequires:	libglade2-devel >= 2.0
@@ -45,10 +45,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc ChangeLog BUGS README TODO
 %attr(755,root,root) %{_bindir}/iswitchwin
