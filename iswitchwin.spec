@@ -1,5 +1,5 @@
 Summary:	Fast Window Switcher for EWHM window managers
-Summary(pl):	Narzêdzie do szybkiego prze³±czania okien dla zarz±dców okien EWHM
+Summary(pl.UTF-8):   NarzÄ™dzie do szybkiego przeÅ‚Ä…czania okien dla zarzÄ…dcÃ³w okien EWHM
 Name:		iswitchwin
 Version:	0.9
 Release:	1
@@ -23,14 +23,14 @@ control your window manager and has been primarily written for
 Metacity and Gnome environment. It should work with any EWHM
 compatibile window manager.
 
-%description -l pl
-switchwin pozwala ³atwo prze³±czaæ miêdzy oknami na obszarach
-roboczych poprzez wpisywanie (czê¶ci) tytu³u po¿±danego okienka.
-Narzêdzie zosta³o zainspirowane przez iswitch-window.jl oryginalnie
-napisane przez Topi Paavolê <tjp@iki.fi> dla zarz±dcy okien Sawfish.
-iswitchwin u¿ywa libwnck do sterowania zarz±dc± okien i zosta³o
-napisane g³ównie dla Metacity i ¶rodowiska GNOME. Powinno dzia³aæ z
-dowolnym zarz±dc± okien zgodnym z EWHM.
+%description -l pl.UTF-8
+switchwin pozwala Å‚atwo przeÅ‚Ä…czaÄ‡ miÄ™dzy oknami na obszarach
+roboczych poprzez wpisywanie (czÄ™Å›ci) tytuÅ‚u poÅ¼Ä…danego okienka.
+NarzÄ™dzie zostaÅ‚o zainspirowane przez iswitch-window.jl oryginalnie
+napisane przez Topi PaavolÄ™ <tjp@iki.fi> dla zarzÄ…dcy okien Sawfish.
+iswitchwin uÅ¼ywa libwnck do sterowania zarzÄ…dcÄ… okien i zostaÅ‚o
+napisane gÅ‚Ã³wnie dla Metacity i Å›rodowiska GNOME. Powinno dziaÅ‚aÄ‡ z
+dowolnym zarzÄ…dcÄ… okien zgodnym z EWHM.
 
 %prep
 %setup -q
