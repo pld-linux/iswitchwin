@@ -1,5 +1,5 @@
 Summary:	Fast Window Switcher for EWHM window managers
-Summary(pl.UTF-8):   Narzędzie do szybkiego przełączania okien dla zarządców okien EWHM
+Summary(pl.UTF-8):	Narzędzie do szybkiego przełączania okien dla zarządców okien EWHM
 Name:		iswitchwin
 Version:	0.9
 Release:	1
